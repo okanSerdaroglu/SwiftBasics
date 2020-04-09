@@ -37,3 +37,16 @@ var mySet1 : Set = [1,2,3]
 var mySet2 : Set = [3,4,5]
 var mySet3 : Set = mySet1.union(mySet2)
 print(mySet3)
+
+// dictionary
+
+var myFavouriteDirectors = ["Pulp Fiction" : "Tarantino" , "Lock Stock" : "Guy Ritchie","The Dark Night":"Christopher Nolan"]
+
+myFavouriteDirectors ["Pulp Fiction"]
+print(myFavouriteDirectors)
+
+myFavouriteDirectors ["Seven Samurai"] = "Akira" // there is no index logic like arrays
+print(myFavouriteDirectors)
+
+var myDictionary  = ["run":100,"Swim":200,"Basketball":300]
+myDictionary["run"]
