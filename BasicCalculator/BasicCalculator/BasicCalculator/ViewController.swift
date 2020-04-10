@@ -39,21 +39,23 @@ class ViewController: UIViewController {
     }
     
     func calculateNumbers (calculationType:Int)  {
-        
-        let numberOne  =  Double(textFieldNumberOne.text!)
-        let numberTwo  = Double(textFieldNumberTwo.text!)
-        var result : Double = 0.0
-        if (calculationType == 0){
-            result = numberOne! + numberTwo!
-        } else if (calculationType == 1){
-            result = numberOne! - numberTwo!
-        } else if (calculationType == 2){
-            result = numberOne! / numberTwo!
-        } else if (calculationType == 3){
-            result = numberOne! * numberTwo!
+       
+        if let numberOne = Double(textFieldNumberOne.text ?? ""){
+            if let numberTwo = Double(textFieldNumberTwo.text ?? ""){
+                var result = 0.0
+                if (calculationType == 0){
+                   result = numberOne + numberTwo
+                } else if (calculationType == 1){
+                    result = numberOne - numberTwo
+                } else if (calculationType == 2){
+                    result = numberOne / numberTwo
+                } else if (calculationType == 3){
+                    result = numberOne * numberTwo
+                }
+                textFieldResult.text = String (result)
+            }
         }
-        
-        textFieldResult.text = String(result)
+       
     }
     
 }
