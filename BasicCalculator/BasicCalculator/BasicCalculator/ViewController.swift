@@ -15,8 +15,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textFieldResult: UITextField!
 
-    var result : Double = 0.0
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

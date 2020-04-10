@@ -47,7 +47,6 @@
                                 <state key="normal" title="Button" image="minus" catalog="system"/>
                                 <connections>
                                     <action selector="buttonMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eeN-bk-yCy"/>
-                                    <action selector="buttonPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z7S-Hc-60O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXQ-dA-rRF">
@@ -56,7 +55,6 @@
                                 <state key="normal" title="Button" image="divide" catalog="system"/>
                                 <connections>
                                     <action selector="buttonDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83Q-mJ-hKi"/>
-                                    <action selector="buttonPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2V-SX-bbA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfn-Jb-nct">
@@ -65,7 +63,6 @@
                                 <state key="normal" title="Button" image="multiply" catalog="system"/>
                                 <connections>
                                     <action selector="buttonMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSo-jQ-kAz"/>
-                                    <action selector="buttonPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IV0-7o-Jbi"/>
                                 </connections>
                             </button>
                         </subviews>
