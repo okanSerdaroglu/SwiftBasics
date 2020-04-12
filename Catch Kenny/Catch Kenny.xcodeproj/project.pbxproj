@@ -15,6 +15,7 @@
 		3D8218D1244375470008C28C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8218CF244375470008C28C /* LaunchScreen.storyboard */; };
 		3D8218D9244378A70008C28C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8218D8244378A70008C28C /* LoginViewController.swift */; };
 		3D8218DB24437B470008C28C /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8218DA24437B470008C28C /* SplashViewController.swift */; };
+		3D8218DD24437FD20008C28C /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8218DC24437FD20008C28C /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3D8218D2244375470008C28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D8218D8244378A70008C28C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D8218DA24437B470008C28C /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3D8218DC24437FD20008C28C /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				3D8218D2244375470008C28C /* Info.plist */,
 				3D8218D8244378A70008C28C /* LoginViewController.swift */,
 				3D8218DA24437B470008C28C /* SplashViewController.swift */,
+				3D8218DC24437FD20008C28C /* HomePageViewController.swift */,
 			);
 			path = "Catch Kenny";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				3D8218D9244378A70008C28C /* LoginViewController.swift in Sources */,
 				3D8218C9244375450008C28C /* ViewController.swift in Sources */,
+				3D8218DD24437FD20008C28C /* HomePageViewController.swift in Sources */,
 				3D8218C5244375450008C28C /* AppDelegate.swift in Sources */,
 				3D8218C7244375450008C28C /* SceneDelegate.swift in Sources */,
 				3D8218DB24437B470008C28C /* SplashViewController.swift in Sources */,
