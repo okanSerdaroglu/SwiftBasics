@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TQH-HZ-HAL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qeO-wJ-fSG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -16,22 +16,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cl3-N6-qyM">
-                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <rect key="frame" x="30" y="118" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cw-AS-Sv0">
-                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <rect key="frame" x="30" y="182" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-tW-9ba">
-                                <rect key="frame" x="30" y="202" width="354" height="34"/>
+                                <rect key="frame" x="30" y="246" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCo-SV-rtv">
-                                <rect key="frame" x="30" y="266" width="354" height="30"/>
+                                <rect key="frame" x="30" y="310" width="354" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                             </button>
                         </subviews>
@@ -52,10 +52,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xBi-0f-rb7"/>
+                    <connections>
+                        <segue destination="1Oc-Vm-FAP" kind="show" id="q1q-Re-GQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1034.7826086956522" y="-101.11607142857143"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="fAg-ge-XHq">
@@ -66,17 +70,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LS1-rP-es9">
-                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <rect key="frame" x="30" y="118" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2f7-Dh-cYn">
-                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <rect key="frame" x="30" y="182" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-pk-FFT">
-                                <rect key="frame" x="30" y="202" width="354" height="30"/>
+                                <rect key="frame" x="30" y="246" width="354" height="30"/>
                                 <state key="normal" title="Loign"/>
                             </button>
                         </subviews>
@@ -94,10 +98,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vv2-wt-sN2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ZbD-cQ-PhI"/>
+                    <connections>
+                        <segue destination="1Oc-Vm-FAP" kind="show" id="c0O-E0-xbk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3u-vP-lns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924.63768115942037" y="107.8125"/>
+            <point key="canvasLocation" x="1034.7826086956522" y="626.78571428571422"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="NhF-vR-ROp">
@@ -115,56 +123,202 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LsV-Iw-JeV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="If7-HI-Go7"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="9rz-1n-2vf"/>
+                        <segue destination="52p-gz-NBL" kind="show" id="1A0-fd-Xm9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I69-tz-smq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-716" y="110"/>
+            <point key="canvasLocation" x="50.724637681159422" y="314.73214285714283"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="MQ2-Yz-Hzg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pd0-A3-rya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="1Oc-Vm-FAP" customClass="HomePageViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ymw-UP-3J0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome User" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-Y9-0eL">
-                                <rect key="frame" x="70" y="70" width="240" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Welcome User" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-Y9-0eL">
+                                <rect key="frame" x="30" y="70" width="354" height="59"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Score : " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-IL-g4q">
-                                <rect key="frame" x="87" y="153" width="240" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Score : " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-IL-g4q">
+                                <rect key="frame" x="30" y="153" width="354" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-mX-1dA">
-                                <rect key="frame" x="70" y="269" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-mX-1dA">
+                                <rect key="frame" x="30" y="269" width="354" height="30"/>
                                 <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <segue destination="m0D-Ui-2P4" kind="show" id="OVN-yt-APF"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-NJ-B75">
-                                <rect key="frame" x="166" y="317" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-NJ-B75">
+                                <rect key="frame" x="30" y="317" width="354" height="30"/>
                                 <state key="normal" title="Logout"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CSC-NJ-B75" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="37V-fe-AUu"/>
+                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="wsP-IL-g4q" secondAttribute="trailing" constant="30" id="CAv-cv-qgs"/>
+                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="akh-mX-1dA" secondAttribute="trailing" constant="30" id="G8M-bz-fyr"/>
+                            <constraint firstItem="akh-mX-1dA" firstAttribute="top" secondItem="wsP-IL-g4q" secondAttribute="bottom" constant="30" id="Hjf-gp-iqW"/>
+                            <constraint firstItem="2kS-Y9-0eL" firstAttribute="top" secondItem="FuV-10-95c" secondAttribute="top" constant="30" id="NUt-dk-N39"/>
+                            <constraint firstItem="2kS-Y9-0eL" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="PbK-JT-QAH"/>
+                            <constraint firstItem="wsP-IL-g4q" firstAttribute="top" secondItem="2kS-Y9-0eL" secondAttribute="bottom" constant="30" id="UHm-gW-uwq"/>
+                            <constraint firstItem="wsP-IL-g4q" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="gWI-V9-Bb8"/>
+                            <constraint firstItem="akh-mX-1dA" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="lFi-Ry-X9P"/>
+                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="CSC-NJ-B75" secondAttribute="trailing" constant="30" id="lMc-zA-3z1"/>
+                            <constraint firstItem="CSC-NJ-B75" firstAttribute="top" secondItem="akh-mX-1dA" secondAttribute="bottom" constant="30" id="ora-ck-hp7"/>
+                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="2kS-Y9-0eL" secondAttribute="trailing" constant="30" id="w77-gz-7Ph"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FuV-10-95c"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fSv-ee-gqH"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pd0-A3-rya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776.8115942028987" y="109.82142857142857"/>
+            <point key="canvasLocation" x="2292.753623188406" y="314.73214285714283"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="9YS-55-Yf7">
+            <objects>
+                <viewController id="m0D-Ui-2P4" customClass="GameViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qZa-ds-Yiw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qee-51-Tfh">
+                                <rect key="frame" x="186" y="60" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-2l-6K3">
+                                <rect key="frame" x="274" y="134" width="82" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="G5F-9H-a3y">
+                                <rect key="frame" x="21" y="195" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-dG-iUB">
+                                <rect key="frame" x="148" y="195" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-9p-hkm">
+                                <rect key="frame" x="280" y="195" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-8Z-ifz">
+                                <rect key="frame" x="21" y="306" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-dD-LLP">
+                                <rect key="frame" x="148" y="306" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-wM-YCI">
+                                <rect key="frame" x="280" y="306" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AJ1-VG-i3M">
+                                <rect key="frame" x="22" y="421" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-Qq-Wkf">
+                                <rect key="frame" x="149" y="421" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-b7-sxO">
+                                <rect key="frame" x="281" y="421" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-N6-Dgp">
+                                <rect key="frame" x="18" y="535" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="clx-PL-hxG">
+                                <rect key="frame" x="145" y="535" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-tE-4x0">
+                                <rect key="frame" x="277" y="535" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7EY-6K-13l">
+                                <rect key="frame" x="15" y="649" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-h6-XbF">
+                                <rect key="frame" x="142" y="649" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-LH-8jo">
+                                <rect key="frame" x="274" y="649" width="114" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsl-e6-Bqq">
+                                <rect key="frame" x="91" y="798" width="227" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Finish"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-0O-sUd">
+                                <rect key="frame" x="64" y="134" width="82" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="s0O-VE-Wxn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zor-ZB-yhP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hiv-ZB-kqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3428.985507246377" y="314.73214285714283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wmG-cp-B3z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qeO-wJ-fSG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7f2-hN-O4y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TQH-HZ-HAL" kind="relationship" relationship="rootViewController" id="Q9s-wW-H1s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBt-c4-hjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859.4202898550725" y="314.73214285714283"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="c0O-E0-xbk"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="kenny" width="900" height="1100"/>
+        <image name="kennyDesktop" width="1000" height="1345"/>
     </resources>
 </document>
