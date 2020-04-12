@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TQH-HZ-HAL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,118 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cl3-N6-qyM">
+                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9cw-AS-Sv0">
+                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password Again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfZ-tW-9ba">
+                                <rect key="frame" x="30" y="202" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCo-SV-rtv">
+                                <rect key="frame" x="30" y="266" width="354" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9cw-AS-Sv0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1ZQ-mE-6Uq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9cw-AS-Sv0" secondAttribute="trailing" constant="30" id="2zt-NJ-Ggu"/>
+                            <constraint firstItem="yfZ-tW-9ba" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4ap-1p-gEQ"/>
+                            <constraint firstItem="Cl3-N6-qyM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ORS-Vv-yXm"/>
+                            <constraint firstItem="yfZ-tW-9ba" firstAttribute="top" secondItem="9cw-AS-Sv0" secondAttribute="bottom" constant="30" id="RUE-os-0nc"/>
+                            <constraint firstItem="9cw-AS-Sv0" firstAttribute="top" secondItem="Cl3-N6-qyM" secondAttribute="bottom" constant="30" id="UJo-0T-iOj"/>
+                            <constraint firstItem="hCo-SV-rtv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="WKt-Xw-GHT"/>
+                            <constraint firstItem="hCo-SV-rtv" firstAttribute="top" secondItem="yfZ-tW-9ba" secondAttribute="bottom" constant="30" id="Xjf-XG-zl6"/>
+                            <constraint firstItem="Cl3-N6-qyM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="kTP-8s-tw0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yfZ-tW-9ba" secondAttribute="trailing" constant="30" id="skp-dR-LZ6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hCo-SV-rtv" secondAttribute="trailing" constant="30" id="vMt-CK-X0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cl3-N6-qyM" secondAttribute="trailing" constant="30" id="vs3-E7-KUs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="fAg-ge-XHq">
+            <objects>
+                <viewController id="52p-gz-NBL" customClass="LoginViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P68-be-JRv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LS1-rP-es9">
+                                <rect key="frame" x="30" y="74" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2f7-Dh-cYn">
+                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-pk-FFT">
+                                <rect key="frame" x="30" y="202" width="354" height="30"/>
+                                <state key="normal" title="Loign"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fHX-pk-FFT" firstAttribute="top" secondItem="2f7-Dh-cYn" secondAttribute="bottom" constant="30" id="7Xo-7u-9Y7"/>
+                            <constraint firstItem="2f7-Dh-cYn" firstAttribute="top" secondItem="LS1-rP-es9" secondAttribute="bottom" constant="30" id="LNh-eH-I3c"/>
+                            <constraint firstItem="vv2-wt-sN2" firstAttribute="trailing" secondItem="LS1-rP-es9" secondAttribute="trailing" constant="30" id="Otl-Dn-0Dm"/>
+                            <constraint firstItem="LS1-rP-es9" firstAttribute="leading" secondItem="vv2-wt-sN2" secondAttribute="leading" constant="30" id="gk4-8y-LT4"/>
+                            <constraint firstItem="vv2-wt-sN2" firstAttribute="trailing" secondItem="fHX-pk-FFT" secondAttribute="trailing" constant="30" id="izt-f7-Vtq"/>
+                            <constraint firstItem="fHX-pk-FFT" firstAttribute="leading" secondItem="vv2-wt-sN2" secondAttribute="leading" constant="30" id="ovS-PM-aNp"/>
+                            <constraint firstItem="vv2-wt-sN2" firstAttribute="trailing" secondItem="2f7-Dh-cYn" secondAttribute="trailing" constant="30" id="u8x-tv-y29"/>
+                            <constraint firstItem="2f7-Dh-cYn" firstAttribute="leading" secondItem="vv2-wt-sN2" secondAttribute="leading" constant="30" id="w09-ny-ebf"/>
+                            <constraint firstItem="LS1-rP-es9" firstAttribute="top" secondItem="vv2-wt-sN2" secondAttribute="top" constant="30" id="w0g-DE-YAN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vv2-wt-sN2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3u-vP-lns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="107.8125"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="NhF-vR-ROp">
+            <objects>
+                <viewController id="TQH-HZ-HAL" customClass="SplashViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HjP-14-wLC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kenny" translatesAutoresizingMaskIntoConstraints="NO" id="hoo-GO-u7E">
+                                <rect key="frame" x="87" y="250" width="240" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LsV-Iw-JeV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I69-tz-smq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kenny" width="900" height="1100"/>
+    </resources>
 </document>
