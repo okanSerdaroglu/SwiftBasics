@@ -72,21 +72,21 @@
             <objects>
                 <viewController id="52p-gz-NBL" customClass="LoginViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P68-be-JRv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LS1-rP-es9">
-                                <rect key="frame" x="30" y="30" width="354" height="34"/>
+                                <rect key="frame" x="30" y="118" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2f7-Dh-cYn">
-                                <rect key="frame" x="30" y="94" width="354" height="34"/>
+                                <rect key="frame" x="30" y="182" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-pk-FFT">
-                                <rect key="frame" x="30" y="158" width="354" height="30"/>
+                                <rect key="frame" x="30" y="246" width="354" height="30"/>
                                 <state key="normal" title="Loign"/>
                                 <connections>
                                     <action selector="buttonLogin:" destination="52p-gz-NBL" eventType="touchUpInside" id="WjL-kZ-9dV"/>
@@ -222,71 +222,74 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="G5F-9H-a3y">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="G5F-9H-a3y">
                                 <rect key="frame" x="21" y="195" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-dG-iUB">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="0Ma-dG-iUB">
                                 <rect key="frame" x="148" y="195" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-9p-hkm">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Jsv-9p-hkm">
                                 <rect key="frame" x="280" y="195" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-8Z-ifz">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-8Z-ifz">
                                 <rect key="frame" x="21" y="306" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-dD-LLP">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-dD-LLP">
                                 <rect key="frame" x="148" y="306" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-wM-YCI">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AaU-wM-YCI">
                                 <rect key="frame" x="280" y="306" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AJ1-VG-i3M">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AJ1-VG-i3M">
                                 <rect key="frame" x="22" y="421" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-Qq-Wkf">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="NXy-Qq-Wkf">
                                 <rect key="frame" x="149" y="421" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-b7-sxO">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-b7-sxO">
                                 <rect key="frame" x="281" y="421" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-N6-Dgp">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="HHW-N6-Dgp">
                                 <rect key="frame" x="18" y="535" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="clx-PL-hxG">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="clx-PL-hxG">
                                 <rect key="frame" x="145" y="535" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-tE-4x0">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-tE-4x0">
                                 <rect key="frame" x="277" y="535" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7EY-6K-13l">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="7EY-6K-13l">
                                 <rect key="frame" x="15" y="649" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-h6-XbF">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-h6-XbF">
                                 <rect key="frame" x="142" y="649" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-LH-8jo">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kennyDesktop" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-LH-8jo">
                                 <rect key="frame" x="274" y="649" width="114" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsl-e6-Bqq">
-                                <rect key="frame" x="91" y="798" width="227" height="49"/>
+                                <rect key="frame" x="91" y="752" width="227" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Finish"/>
+                                <connections>
+                                    <segue destination="1Oc-Vm-FAP" kind="show" id="sqh-we-xlf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-0O-sUd">
                                 <rect key="frame" x="64" y="134" width="82" height="40"/>
@@ -300,6 +303,25 @@
                         <viewLayoutGuide key="safeArea" id="s0O-VE-Wxn"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zor-ZB-yhP"/>
+                    <connections>
+                        <outlet property="imageView0" destination="G5F-9H-a3y" id="1Vk-3E-0Ya"/>
+                        <outlet property="imageView1" destination="0Ma-dG-iUB" id="fDg-ab-aoP"/>
+                        <outlet property="imageView10" destination="clx-PL-hxG" id="jmw-o5-Z3Q"/>
+                        <outlet property="imageView11" destination="AqZ-tE-4x0" id="6Sg-4O-ZLh"/>
+                        <outlet property="imageView12" destination="7EY-6K-13l" id="s59-pv-QC9"/>
+                        <outlet property="imageView13" destination="V8f-h6-XbF" id="fES-e3-uVO"/>
+                        <outlet property="imageView14" destination="dVD-LH-8jo" id="q63-DX-tp7"/>
+                        <outlet property="imageView2" destination="Jsv-9p-hkm" id="OvJ-lj-Ye5"/>
+                        <outlet property="imageView3" destination="zOV-8Z-ifz" id="jgj-Uf-9Bn"/>
+                        <outlet property="imageView4" destination="7KH-dD-LLP" id="5G1-tA-lAq"/>
+                        <outlet property="imageView5" destination="AaU-wM-YCI" id="hHq-kv-T1l"/>
+                        <outlet property="imageView6" destination="AJ1-VG-i3M" id="2SQ-YT-HNF"/>
+                        <outlet property="imageView7" destination="NXy-Qq-Wkf" id="0pp-nv-JpY"/>
+                        <outlet property="imageView8" destination="Bsu-b7-sxO" id="g0W-QT-bMr"/>
+                        <outlet property="imageView9" destination="HHW-N6-Dgp" id="Mgn-7R-3EG"/>
+                        <outlet property="labelScore" destination="OPD-2l-6K3" id="22S-5b-RzB"/>
+                        <outlet property="labelTimer" destination="Qpw-0O-sUd" id="0lL-JB-aeM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiv-ZB-kqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -325,8 +347,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="c0O-E0-xbk"/>
-        <segue reference="rBZ-lk-73K"/>
+        <segue reference="sqh-we-xlf"/>
+        <segue reference="1A0-fd-Xm9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="kenny" width="900" height="1100"/>
