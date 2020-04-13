@@ -133,6 +133,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="splashToSignUp" id="9rz-1n-2vf"/>
                         <segue destination="52p-gz-NBL" kind="show" identifier="splashToLogin" id="1A0-fd-Xm9"/>
+                        <segue destination="1Oc-Vm-FAP" kind="show" identifier="splashToHomePage" id="3kq-Q1-VOF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I69-tz-smq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,50 +148,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Welcome User" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-Y9-0eL">
-                                <rect key="frame" x="30" y="70" width="354" height="59"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Welcome User" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kS-Y9-0eL">
+                                <rect key="frame" x="30" y="145" width="354" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Score : " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-IL-g4q">
-                                <rect key="frame" x="30" y="153" width="354" height="45"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Score : " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsP-IL-g4q">
+                                <rect key="frame" x="30" y="228" width="354" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-mX-1dA">
-                                <rect key="frame" x="30" y="269" width="354" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akh-mX-1dA">
+                                <rect key="frame" x="30" y="344" width="354" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Game"/>
                                 <connections>
-                                    <segue destination="m0D-Ui-2P4" kind="show" id="OVN-yt-APF"/>
+                                    <action selector="buttonStartGame:" destination="1Oc-Vm-FAP" eventType="touchUpInside" id="mXq-EW-Sbk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-NJ-B75">
-                                <rect key="frame" x="30" y="317" width="354" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSC-NJ-B75">
+                                <rect key="frame" x="30" y="392" width="354" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="buttonLogOut:" destination="1Oc-Vm-FAP" eventType="touchUpInside" id="Uar-cC-kem"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="CSC-NJ-B75" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="37V-fe-AUu"/>
-                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="wsP-IL-g4q" secondAttribute="trailing" constant="30" id="CAv-cv-qgs"/>
-                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="akh-mX-1dA" secondAttribute="trailing" constant="30" id="G8M-bz-fyr"/>
-                            <constraint firstItem="akh-mX-1dA" firstAttribute="top" secondItem="wsP-IL-g4q" secondAttribute="bottom" constant="30" id="Hjf-gp-iqW"/>
-                            <constraint firstItem="2kS-Y9-0eL" firstAttribute="top" secondItem="FuV-10-95c" secondAttribute="top" constant="30" id="NUt-dk-N39"/>
-                            <constraint firstItem="2kS-Y9-0eL" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="PbK-JT-QAH"/>
-                            <constraint firstItem="wsP-IL-g4q" firstAttribute="top" secondItem="2kS-Y9-0eL" secondAttribute="bottom" constant="30" id="UHm-gW-uwq"/>
-                            <constraint firstItem="wsP-IL-g4q" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="gWI-V9-Bb8"/>
-                            <constraint firstItem="akh-mX-1dA" firstAttribute="leading" secondItem="FuV-10-95c" secondAttribute="leading" constant="30" id="lFi-Ry-X9P"/>
-                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="CSC-NJ-B75" secondAttribute="trailing" constant="30" id="lMc-zA-3z1"/>
-                            <constraint firstItem="CSC-NJ-B75" firstAttribute="top" secondItem="akh-mX-1dA" secondAttribute="bottom" constant="30" id="ora-ck-hp7"/>
-                            <constraint firstItem="FuV-10-95c" firstAttribute="trailing" secondItem="2kS-Y9-0eL" secondAttribute="trailing" constant="30" id="w77-gz-7Ph"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FuV-10-95c"/>
                     </view>
                     <navigationItem key="navigationItem" id="fSv-ee-gqH"/>
+                    <connections>
+                        <outlet property="textViewScore" destination="wsP-IL-g4q" id="cbR-kE-jZq"/>
+                        <outlet property="textViewUserName" destination="2kS-Y9-0eL" id="Vav-tf-IfI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pd0-A3-rya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

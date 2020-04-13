@@ -56,6 +56,7 @@ class ViewController: UIViewController {
             if (password == passwordAgain){
               UserDefaults.standard.set(userName, forKey: "userName")
               UserDefaults.standard.set(password, forKey: "password")
+              performSegue(withIdentifier: "signUpToHomePage", sender: nil)
             } else {
               makeAlert(alertMessage: "Password is incorrect", title: "Error !")
             }
@@ -64,5 +65,13 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "signUpToHomePage"){
+            let destinationVC = segue.destination as! HomePageViewController
+            destinationVC.userName = userName
+        }
+    }
+    
 }
 
