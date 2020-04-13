@@ -24,14 +24,10 @@ class HomePageViewController: UIViewController {
         let storedName = UserDefaults.standard.object(forKey: "userName")
         let storedPassword = UserDefaults.standard.object(forKey: "password")
         
-        if (storedName as! String) != nil {
-            UserDefaults.standard.removeObject(forKey: "userName")
-        }
+        UserDefaults.standard.removeObject(forKey: "userName")
+        UserDefaults.standard.removeObject(forKey: "password")
         
-        if (storedPassword as! String) != nil {
-            UserDefaults.standard.removeObject(forKey: "password")
-        }
-        
+        performSegue(withIdentifier: "homePageToLogin", sender: nil)
         
     }
     

@@ -42,7 +42,13 @@ class SplashViewController: UIViewController {
                 performSegue(withIdentifier: "splashToSignUp", sender: nil)
             }
         }
-        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "splashToHomePage"){
+            let destinationVC = segue.destination as! HomePageViewController
+            destinationVC.userName = storedName
+        }
     }
     
 }
