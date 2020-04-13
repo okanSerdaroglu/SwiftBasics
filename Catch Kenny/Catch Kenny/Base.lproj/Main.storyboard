@@ -54,7 +54,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xBi-0f-rb7"/>
                     <connections>
-                        <segue destination="1Oc-Vm-FAP" kind="show" id="q1q-Re-GQR"/>
+                        <segue destination="1Oc-Vm-FAP" kind="show" identifier="signUpToHomePage" id="q1q-Re-GQR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,7 +100,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZbD-cQ-PhI"/>
                     <connections>
-                        <segue destination="1Oc-Vm-FAP" kind="show" id="c0O-E0-xbk"/>
+                        <segue destination="1Oc-Vm-FAP" kind="show" identifier="loginToHomePage" id="c0O-E0-xbk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3u-vP-lns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -125,8 +125,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="If7-HI-Go7"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="9rz-1n-2vf"/>
-                        <segue destination="52p-gz-NBL" kind="show" id="1A0-fd-Xm9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="splashToSignUp" id="9rz-1n-2vf"/>
+                        <segue destination="52p-gz-NBL" kind="show" identifier="splashToLogin" id="1A0-fd-Xm9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I69-tz-smq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,7 +136,6 @@
         <!--Home Page View Controller-->
         <scene sceneID="MQ2-Yz-Hzg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pd0-A3-rya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="1Oc-Vm-FAP" customClass="HomePageViewController" customModule="Catch_Kenny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ymw-UP-3J0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -187,6 +186,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fSv-ee-gqH"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pd0-A3-rya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2292.753623188406" y="314.73214285714283"/>
         </scene>
