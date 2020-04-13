@@ -31,11 +31,12 @@ class GameViewController: UIViewController {
     var ImageViewArray = [UIImageView]()
     
     var timer = Timer()
-    var counter = 30
+    var counter = 15
     var lastPosition = 0
     var score = 0
     var theTimeIsOver = false
 
+    @IBOutlet weak var buttonFinishClicked: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

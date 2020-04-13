@@ -273,9 +273,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Finish"/>
-                                <connections>
-                                    <segue destination="1Oc-Vm-FAP" kind="show" id="sqh-we-xlf"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-0O-sUd">
                                 <rect key="frame" x="55" y="96" width="285" height="40"/>
@@ -314,6 +311,7 @@
                         <outlet property="imageView9" destination="HHW-N6-Dgp" id="Mgn-7R-3EG"/>
                         <outlet property="labelScore" destination="OPD-2l-6K3" id="22S-5b-RzB"/>
                         <outlet property="labelTimer" destination="Qpw-0O-sUd" id="0lL-JB-aeM"/>
+                        <segue destination="1Oc-Vm-FAP" kind="show" id="89v-wa-hdf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiv-ZB-kqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -340,7 +338,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sqh-we-xlf"/>
+        <segue reference="89v-wa-hdf"/>
         <segue reference="1A0-fd-Xm9"/>
     </inferredMetricsTieBreakers>
     <resources>
