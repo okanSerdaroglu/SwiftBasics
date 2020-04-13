@@ -30,14 +30,33 @@ class GameViewController: UIViewController {
     @IBOutlet weak var labelTimer: UILabel!
     var ImageViewArray = [UIImageView]()
     
+    var timer = Timer()
+    var counter = 30
+    var lastPosition = 0
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ImageViewArray = [imageView0,imageView1,imageView2,imageView3,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9,imageView10,imageView11,imageView12,imageView13,imageView14]
         generateNumber().isHidden = false
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
     }
     
     func generateNumber() -> UIImageView {
-        return ImageViewArray[Int.random(in: 0..<ImageViewArray.count - 1)]
+        lastPosition = Int.random(in: 0..<ImageViewArray.count - 1)
+        return ImageViewArray[lastPosition]
     }
+    
+    @objc func timerFunction (){
+           labelTimer.text = "Time: \(counter)"
+           counter = counter - 1
+           ImageViewArray[lastPosition].isHidden = true
+           generateNumber().isHidden = false
+           if (counter == 0){
+               timer.invalidate() 
+               labelTimer.text = "Time is over"
+           }
+       }
+       
     
 }
