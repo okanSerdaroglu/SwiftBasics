@@ -41,7 +41,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         landmarkImages = [UIImage(named: "akdamar")!,UIImage(named: "ayasofya")!,UIImage(named: "pamukkale")!,UIImage(named: "kapadokya")!,UIImage(named: "sumela")!]
         
         landmarkNames = ["akdamar","ayasofya","pamukkale","kapadokya","sumela"]
-        
+
+        navigationItem.title = "Landmark"
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
