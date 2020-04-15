@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class SuperMusicians : Musicians {
+    
+    func singTwo() {
+        print("sing Two")
+    }
+    
+    override func sing() {
+        super.sing()
+        print("kirk is singing")
+    }
+    
+}
