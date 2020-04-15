@@ -11,16 +11,25 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-
+    var landmarkImages = [UIImage]()
+    var landmarkNames = [String]()
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) { // delete function
+        if editingStyle == .delete{
+            landmarkNames.remove(at: indexPath.row)
+            landmarkImages.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.fade)
+        }
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 // number of rows
+        return landmarkNames.count // number of rows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
-        cell.textLabel?.text = "test"
+        cell.textLabel?.text = landmarkNames[indexPath.row]
         return cell
     }
     
@@ -28,6 +37,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        landmarkImages = [UIImage(named: "akdamar")!,UIImage(named: "ayasofya")!,UIImage(named: "pamukkale")!,UIImage(named: "kapadokya")!,UIImage(named: "sumela")!]
+        
+        landmarkNames = ["akdamar","ayasofya","pamukkale","kapadokya","sumela"]
+        
     }
 
 
