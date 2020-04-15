@@ -43,6 +43,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         landmarkNames = ["akdamar","ayasofya","pamukkale","kapadokya","sumela"]
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "tableViewToDetail", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "tableViewToDetail"){
+            let index = sender as! Int
+            let destinationVC = segue.destination as! DetailViewController
+            destinationVC.selectedLandmarkName = landmarkNames[index]
+            destinationVC.selectedLandmarkImage = landmarkImages[index]
+
+        }
+    }
 
 
 }
