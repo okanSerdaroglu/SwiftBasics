@@ -61,6 +61,10 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UIN
             print("error")
         }
         
+        NotificationCenter.default.post(name:NSNotification.Name("newData"),object: nil) // send data to all viewControllers in app there is newData
+        self.navigationController?.popViewController(animated: true)
+        
+        
     }
     
     @objc func selectImage (){
