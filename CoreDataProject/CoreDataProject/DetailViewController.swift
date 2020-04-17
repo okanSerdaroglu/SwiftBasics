@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var imageViewCaptured: UIImageView!
     
@@ -25,6 +25,10 @@ class DetailViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeybord))
         view.addGestureRecognizer(gestureRecognizer)
         
+        imageViewCaptured.isUserInteractionEnabled = true
+        let imageTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
+        imageViewCaptured.addGestureRecognizer(imageTapRecognizer)
+        
     }
     
     @objc func hideKeybord(){
@@ -32,6 +36,22 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func buttonSaveClicked(_ sender: Any) {
+        
+    }
+    
+    @objc func selectImage (){
+        
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        present(picker, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        imageViewCaptured.image = info [.originalImage] as? UIImage
+        self.dismiss(animated: true, completion: nil)
     }
     
 
