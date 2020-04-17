@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" id="b8M-2P-jcn"/>
                     <connections>
                         <outlet property="tableViewImageList" destination="vpN-yF-GSu" id="pK3-s8-whe"/>
-                        <segue destination="EWa-Ab-2Dp" kind="show" id="QLf-Oa-uhd"/>
+                        <segue destination="EWa-Ab-2Dp" kind="show" identifier="toDetailVC" id="QLf-Oa-uhd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

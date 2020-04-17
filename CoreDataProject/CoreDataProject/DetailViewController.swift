@@ -22,9 +22,14 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeybord))
+        view.addGestureRecognizer(gestureRecognizer)
+        
     }
     
+    @objc func hideKeybord(){
+        view.endEditing(true)
+    }
 
     @IBAction func buttonSaveClicked(_ sender: Any) {
     }
