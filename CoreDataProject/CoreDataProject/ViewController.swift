@@ -28,10 +28,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        NotificationCenter.default.addObserver(self, selector:#selector(getData), name: NSNotification.Name(rawValue: "newData"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(getData), name: NSNotification.Name("newData"), object: nil)
     }
     
     @objc func getData() {
+        
+        nameArray.removeAll(keepingCapacity: false)
+        idArray.removeAll(keepingCapacity: false)
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -49,7 +52,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 if let id = result.value(forKey: "id") as? UUID {
                     self.idArray.append(id)
                 }
-                
+                self.tableViewImageList.reloadData() // reload your tableView when new data notified
             }
         } catch {
             print("error")
