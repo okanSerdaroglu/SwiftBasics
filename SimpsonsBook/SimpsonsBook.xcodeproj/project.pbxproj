@@ -13,6 +13,7 @@
 		3D751A5D2447271C001592DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D751A5B2447271C001592DB /* Main.storyboard */; };
 		3D751A5F24472720001592DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D751A5E24472720001592DB /* Assets.xcassets */; };
 		3D751A6224472720001592DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D751A6024472720001592DB /* LaunchScreen.storyboard */; };
+		3D751A6A2449A881001592DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D751A692449A881001592DB /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D751A5E24472720001592DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D751A6124472720001592DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D751A6324472720001592DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D751A692449A881001592DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3D751A5E24472720001592DB /* Assets.xcassets */,
 				3D751A6024472720001592DB /* LaunchScreen.storyboard */,
 				3D751A6324472720001592DB /* Info.plist */,
+				3D751A692449A881001592DB /* DetailViewController.swift */,
 			);
 			path = SimpsonsBook;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				3D751A5A2447271C001592DB /* ViewController.swift in Sources */,
 				3D751A562447271C001592DB /* AppDelegate.swift in Sources */,
 				3D751A582447271C001592DB /* SceneDelegate.swift in Sources */,
+				3D751A6A2449A881001592DB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
