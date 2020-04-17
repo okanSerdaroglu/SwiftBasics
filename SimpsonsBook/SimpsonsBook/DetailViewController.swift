@@ -14,9 +14,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var imageViewSimson: UIImageView!
     
+    var selectedSimpson : Simpson?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        labelName.text = selectedSimpson?.name
+        labelJob.text = selectedSimpson?.job
+        imageViewSimson.image = selectedSimpson?.image
         
     }
     

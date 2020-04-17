@@ -12,6 +12,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var tableViewSimsons: UITableView!
     
+    var mySimpsons = [Simpson]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewSimsons.dataSource = self
@@ -27,21 +29,42 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
         let ralph = Simpson(simpsonName: "Ralph", simpsonJob: "Nuclear Safety", simpsonImage: UIImage(named : "ralph")!)
 
+        mySimpsons.append(barney)
+        mySimpsons.append(fat)
+        mySimpsons.append(homer)
+        mySimpsons.append(lisa)
+        mySimpsons.append(ralph)
         
-        let homerArray = [barney,fat,homer,lisa,ralph]
+        navigationItem.title = "Simpsons"
         
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return mySimpsons.count
     } // number of rows
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "Homer Simpson"
+        cell.textLabel?.text = mySimpsons[indexPath.row].name
         return cell
     } // your cell
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         
+        performSegue(withIdentifier: "toDetailVc", sender: mySimpsons[indexPath.row])
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+        if (segue.identifier == "toDetailVc") {
+            let selectedSimpson = sender as! Simpson
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.selectedSimpson = selectedSimpson
+        }
+        
+    }
+    
 
 }
 
