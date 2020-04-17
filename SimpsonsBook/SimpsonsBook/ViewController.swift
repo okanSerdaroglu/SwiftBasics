@@ -16,6 +16,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         tableViewSimsons.dataSource = self
         tableViewSimsons.delegate = self
+        
+        let barney = Simpson(simpsonName: "Barney", simpsonJob: "Nuclear Safety", simpsonImage: UIImage(named : "Barney_Gumble")!)
+
+        let fat = Simpson(simpsonName: "Fat", simpsonJob: "Eating", simpsonImage: UIImage(named : "fat")!)
+
+        let homer = Simpson(simpsonName: "Homer", simpsonJob: "Nuclear Safety", simpsonImage: UIImage(named : "hommerSimpson")!)
+
+        let lisa = Simpson(simpsonName: "Lisa", simpsonJob: "Nuclear Safety", simpsonImage: UIImage(named : "lisa")!)
+
+        let ralph = Simpson(simpsonName: "Ralph", simpsonJob: "Nuclear Safety", simpsonImage: UIImage(named : "ralph")!)
+
+        
+        let homerArray = [barney,fat,homer,lisa,ralph]
+        
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
