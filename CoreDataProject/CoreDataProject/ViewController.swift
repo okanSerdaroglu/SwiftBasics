@@ -15,6 +15,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var tableViewImageList: UITableView!
     var nameArray = [String]()
     var idArray = [UUID]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,20 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = UITableViewCell()
         cell.textLabel?.text = nameArray[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        performSegue(withIdentifier: "toDetailVC", sender:indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (sender != nil
+            && segue.identifier == "toDetailVC") {
+            let destinationVC = segue.destination as! DetailViewController
+            destinationVC.chosenPainting = nameArray[sender as! Int]
+            destinationVC.chosenPaintingId = idArray[sender as! Int]
+        }
     }
 
 
