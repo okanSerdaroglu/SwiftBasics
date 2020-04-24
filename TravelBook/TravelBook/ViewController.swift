@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
 
 class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
 
@@ -16,7 +17,29 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
+    var choosenLatitude = Double()
+    var choosenLongtitude = Double()
     
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let newPlace = NSEntityDescription.insertNewObject(forEntityName: "Places", into: context)
+        
+        newPlace.setValue(textFieldName.text, forKey: "title")
+        newPlace.setValue(textFieldComment.text, forKey: "subtitle")
+        newPlace.setValue(choosenLongtitude, forKey: "longtitude")
+        newPlace.setValue(choosenLatitude, forKey: "latitude")
+        newPlace.setValue(UUID(), forKey: "id")
+        
+        do {
+            try context.save()
+            print("success")
+        } catch {
+            print("error")
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +60,8 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         if gestureRecognizer.state == .began {
             let touchPoint = gestureRecognizer.location(in: self.mapView)
             let touchCoordinates = self.mapView.convert(touchPoint, toCoordinateFrom: self.mapView)
+            choosenLatitude = touchCoordinates.latitude
+            choosenLongtitude = touchCoordinates.longitude
             let annotation = MKPointAnnotation()
             annotation.coordinate = touchCoordinates
             annotation.title = textFieldName.text

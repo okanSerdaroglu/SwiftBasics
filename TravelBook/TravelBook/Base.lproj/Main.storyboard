@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-hF-ufV">
-                                <rect key="frame" x="0.0" y="223" width="414" height="711"/>
+                                <rect key="frame" x="0.0" y="223" width="414" height="477"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIx-h1-iBn">
                                 <rect key="frame" x="102" y="83" width="210" height="34"/>
@@ -28,19 +28,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RB0-mZ-TqB">
+                                <rect key="frame" x="102" y="762" width="210" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbN-tE-9jf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="oca-Lb-zKB" firstAttribute="centerX" secondItem="PUF-hF-ufV" secondAttribute="centerX" id="3Hw-Iw-uKQ"/>
-                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="DBu-GJ-b0S"/>
-                            <constraint firstItem="PUF-hF-ufV" firstAttribute="top" secondItem="oca-Lb-zKB" secondAttribute="bottom" constant="32" id="Q6R-YP-dVR"/>
-                            <constraint firstItem="oIx-h1-iBn" firstAttribute="trailing" secondItem="oca-Lb-zKB" secondAttribute="trailing" id="SVP-AC-9Oi"/>
-                            <constraint firstItem="oca-Lb-zKB" firstAttribute="top" secondItem="oIx-h1-iBn" secondAttribute="bottom" constant="40" id="Twm-h2-rsA"/>
-                            <constraint firstItem="oIx-h1-iBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXD-aU-VaG"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="PUF-hF-ufV" secondAttribute="bottom" constant="-72" id="ge8-9E-2TE"/>
-                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="oca-Lb-zKB" secondAttribute="leading" id="hhX-vc-ZFg"/>
-                            <constraint firstItem="PUF-hF-ufV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ibX-IZ-fLa"/>
-                            <constraint firstItem="oIx-h1-iBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="xc3-GQ-cBP"/>
+                            <constraint firstItem="PUF-hF-ufV" firstAttribute="top" secondItem="oca-Lb-zKB" secondAttribute="bottom" constant="32" id="1br-Nd-jLB"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HyL-eT-irj"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="leading" secondItem="RB0-mZ-TqB" secondAttribute="leading" id="Kv1-AX-I2p"/>
+                            <constraint firstItem="RB0-mZ-TqB" firstAttribute="top" secondItem="PUF-hF-ufV" secondAttribute="bottom" constant="62" id="Mwl-kj-hVL"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="trailing" secondItem="RB0-mZ-TqB" secondAttribute="trailing" id="Nit-ZP-3t8"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="centerX" secondItem="PUF-hF-ufV" secondAttribute="centerX" id="Usz-qx-beH"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="oca-Lb-zKB" secondAttribute="leading" id="VCS-dH-2ku"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="dsa-XS-Act"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="ed7-Bl-LiK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RB0-mZ-TqB" secondAttribute="bottom" constant="70" id="jau-Im-BNo"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="top" secondItem="oIx-h1-iBn" secondAttribute="bottom" constant="40" id="tUV-5V-Qiq"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="trailing" secondItem="oca-Lb-zKB" secondAttribute="trailing" id="wBz-eD-Fwi"/>
+                            <constraint firstItem="PUF-hF-ufV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y58-IG-lYG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
