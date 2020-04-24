@@ -23,6 +23,11 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     var selectedTitle = ""
     var selectedTitleID : UUID?
     
+    var annotaitonTitle = ""
+    var annotationSubtitle = ""
+    var annotationLatitude = Double()
+    var annotationLongtitude = Double ()
+    
     @IBAction func saveButtonClicked(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -59,6 +64,49 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         if selectedTitle != ""{
             let stringUUID = selectedTitleID!.uuidString
             print(stringUUID)
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName : "Places")
+            let idString = selectedTitleID!.uuidString
+            fetchRequest.predicate = NSPredicate(format: "id=%@", idString)
+            fetchRequest.returnsObjectsAsFaults = false
+            
+            do{
+                let results = try context.fetch(fetchRequest)
+                if results.count > 0{
+                    for result in results as! [NSManagedObject] {
+                        if let title = result.value (forKey: "title") as? String {
+                            annotaitonTitle = title
+                        }
+                        
+                        if let subtitle = result.value(forKey: "subtitle") as? String {
+                            annotationSubtitle = subtitle
+                        }
+                        
+                        if let latitude = result.value(forKey: "latitude") as? Double {
+                            annotationLatitude = latitude
+                        }
+                        
+                        if let longtitude = result.value(forKey: "longtitude") as? Double{
+                            annotationLongtitude = longtitude
+                        }
+                        
+                        let annotation = MKPointAnnotation()
+                        annotation.title = annotaitonTitle
+                        annotation.subtitle = annotationSubtitle
+                        let coordinate = CLLocationCoordinate2D(latitude: annotationLatitude, longitude: annotationLongtitude)
+                        annotation.coordinate = coordinate
+                        mapView.addAnnotation(annotation)
+                        textFieldName.text = annotaitonTitle
+                        textFieldComment.text = annotationSubtitle
+                    }
+                }
+            } catch {
+                print("error")
+            }
+
         }else {
             
             // add new data
