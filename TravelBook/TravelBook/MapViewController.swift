@@ -47,6 +47,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             print("error")
         }
         
+        NotificationCenter.default.post(name : NSNotification.Name("newPlace"),object: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -147,6 +149,30 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             let region = MKCoordinateRegion(center:location , span:span)
             mapView.setRegion(region, animated: true)
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? { // special pin
+        
+        if annotation is MKUserLocation{
+            return nil
+        }
+        
+        let reuseID = "myAnnotation"
+        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID) as? MKPinAnnotationView
+        
+        if pinView == nil {
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
+            pinView?.canShowCallout = true // add custom button
+            pinView?.tintColor = UIColor.black
+            
+            let button = UIButton(type: UIButton.ButtonType.detailDisclosure)
+            pinView?.rightCalloutAccessoryView = button
+            
+        } else {
+            pinView?.annotation = annotation
+        }
+        
+        return pinView
     }
     
     
