@@ -11,6 +11,7 @@ import CoreData
 
 class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
+    @IBOutlet weak var buttomSave: UIButton!
     @IBOutlet weak var imageViewCaptured: UIImageView!
     
     @IBOutlet weak var textFieldName: UITextField!
@@ -28,7 +29,7 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UIN
         
         if (chosenPainting != "") { // get data from database if exists
             // core data
-            
+            buttomSave.isEnabled = true
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
             
@@ -67,8 +68,6 @@ class DetailViewController: UIViewController,UIImagePickerControllerDelegate,UIN
             
             print(stringUUID)
 
-
-            
         }
 
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeybord))

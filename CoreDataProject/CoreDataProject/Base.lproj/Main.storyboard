@@ -83,6 +83,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="iMY-eI-Tey"/>
                     <connections>
+                        <outlet property="buttomSave" destination="Su1-ug-uCJ" id="140-LN-TjL"/>
                         <outlet property="imageViewCaptured" destination="3XQ-T6-Lq5" id="Uqq-5J-3HT"/>
                         <outlet property="textFieldArtist" destination="fI2-Nt-VwP" id="1Yg-rn-8bK"/>
                         <outlet property="textFieldName" destination="OhH-fv-cbM" id="u4a-JW-Dii"/>
