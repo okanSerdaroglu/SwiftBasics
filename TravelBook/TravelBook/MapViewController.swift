@@ -175,6 +175,25 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         return pinView
     }
     
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) { // pin info click
+        if selectedTitle != "" {
+            var requestLocation = CLLocation(latitude:annotationLatitude, longitude: annotationLongtitude)
+            CLGeocoder().reverseGeocodeLocation(requestLocation){(placeMarkList, error) in
+                // closure
+                if let placemark = placeMarkList{
+                    if placemark.count>0{
+                       let newPlaceMark = MKPlacemark(placemark: placemark[0])
+                       let item = MKMapItem(placemark: newPlaceMark)
+                        let lounchOptions = [MKLaunchOptionsDirectionsModeKey:MKLaunchOptionsDirectionsModeDriving ]
+                        item.openInMaps(launchOptions: lounchOptions)
+                          
+                    }
+                }
+               
+            }
+        }
+    }
+    
     
 }
 
