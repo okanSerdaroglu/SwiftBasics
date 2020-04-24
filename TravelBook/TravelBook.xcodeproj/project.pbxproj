@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D0AB1832452FC200025ED5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AB1822452FC200025ED5B /* AppDelegate.swift */; };
 		3D0AB1852452FC200025ED5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AB1842452FC200025ED5B /* SceneDelegate.swift */; };
-		3D0AB1872452FC200025ED5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AB1862452FC200025ED5B /* ViewController.swift */; };
+		3D0AB1872452FC200025ED5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AB1862452FC200025ED5B /* MapViewController.swift */; };
 		3D0AB18A2452FC200025ED5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0AB1882452FC200025ED5B /* Main.storyboard */; };
 		3D0AB18D2452FC200025ED5B /* TravelBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D0AB18B2452FC200025ED5B /* TravelBook.xcdatamodeld */; };
 		3D0AB18F2452FC210025ED5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0AB18E2452FC210025ED5B /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		3D0AB17F2452FC200025ED5B /* TravelBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0AB1822452FC200025ED5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D0AB1842452FC200025ED5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D0AB1862452FC200025ED5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D0AB1862452FC200025ED5B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3D0AB1892452FC200025ED5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D0AB18C2452FC200025ED5B /* TravelBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelBook.xcdatamodel; sourceTree = "<group>"; };
 		3D0AB18E2452FC210025ED5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			children = (
 				3D0AB1822452FC200025ED5B /* AppDelegate.swift */,
 				3D0AB1842452FC200025ED5B /* SceneDelegate.swift */,
-				3D0AB1862452FC200025ED5B /* ViewController.swift */,
+				3D0AB1862452FC200025ED5B /* MapViewController.swift */,
 				3D0AB1882452FC200025ED5B /* Main.storyboard */,
 				3D0AB18E2452FC210025ED5B /* Assets.xcassets */,
 				3D0AB1902452FC210025ED5B /* LaunchScreen.storyboard */,
@@ -145,7 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0AB18D2452FC200025ED5B /* TravelBook.xcdatamodeld in Sources */,
-				3D0AB1872452FC200025ED5B /* ViewController.swift in Sources */,
+				3D0AB1872452FC200025ED5B /* MapViewController.swift in Sources */,
 				3D0AB1832452FC200025ED5B /* AppDelegate.swift in Sources */,
 				3D0AB19A24530D9A0025ED5B /* ListViewController.swift in Sources */,
 				3D0AB1852452FC200025ED5B /* SceneDelegate.swift in Sources */,

@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="834.78260869565224" y="236.38392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Chx-et-D5J">
             <objects>
-                <viewController id="T9R-H2-SLx" customClass="ViewController" customModule="TravelBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T9R-H2-SLx" customClass="MapViewController" customModule="TravelBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bnW-5L-oeJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -71,6 +71,19 @@ class ListViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toMapView", sender: indexPath.row)
+    } // tableView click
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toMapView"{
+            if sender != nil {
+                let index = sender as! Int
+                let destinationVC = segue.destination as! MapViewController
+                destinationVC.selectedTitle = titleArray[index]
+                destinationVC.selectedTitleID = idArray[index]
+            }
+        }
+    } // works before segue
    
-
 }

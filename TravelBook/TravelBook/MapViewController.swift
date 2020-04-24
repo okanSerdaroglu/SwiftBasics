@@ -11,7 +11,7 @@ import MapKit
 import CoreLocation
 import CoreData
 
-class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
+class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
 
     @IBOutlet weak var textFieldComment: UITextField!
     @IBOutlet weak var textFieldName: UITextField!
@@ -19,6 +19,9 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
     var locationManager = CLLocationManager()
     var choosenLatitude = Double()
     var choosenLongtitude = Double()
+    
+    var selectedTitle = ""
+    var selectedTitleID : UUID?
     
     @IBAction func saveButtonClicked(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -53,6 +56,14 @@ class ViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelega
         gestureRecognizer.minimumPressDuration = 3
         mapView.addGestureRecognizer(gestureRecognizer)
         
+        if selectedTitle != ""{
+            let stringUUID = selectedTitleID!.uuidString
+            print(stringUUID)
+        }else {
+            
+            // add new data
+        }
+
     }
     
     @objc func chooseLocation(gestureRecognizer:UILongPressGestureRecognizer){
