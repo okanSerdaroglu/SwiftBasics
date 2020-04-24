@@ -16,25 +16,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PUF-hF-ufV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="223" width="414" height="711"/>
                             </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oIx-h1-iBn">
+                                <rect key="frame" x="102" y="83" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oca-Lb-zKB">
+                                <rect key="frame" x="102" y="157" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PUF-hF-ufV" secondAttribute="trailing" id="OQQ-Rt-v7V"/>
-                            <constraint firstItem="PUF-hF-ufV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="i2A-Cx-Oms"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PUF-hF-ufV" secondAttribute="bottom" id="iup-ty-uE3"/>
-                            <constraint firstItem="PUF-hF-ufV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uhl-fu-KZ6"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="centerX" secondItem="PUF-hF-ufV" secondAttribute="centerX" id="3Hw-Iw-uKQ"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="DBu-GJ-b0S"/>
+                            <constraint firstItem="PUF-hF-ufV" firstAttribute="top" secondItem="oca-Lb-zKB" secondAttribute="bottom" constant="32" id="Q6R-YP-dVR"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="trailing" secondItem="oca-Lb-zKB" secondAttribute="trailing" id="SVP-AC-9Oi"/>
+                            <constraint firstItem="oca-Lb-zKB" firstAttribute="top" secondItem="oIx-h1-iBn" secondAttribute="bottom" constant="40" id="Twm-h2-rsA"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXD-aU-VaG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="PUF-hF-ufV" secondAttribute="bottom" constant="-72" id="ge8-9E-2TE"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="leading" secondItem="oca-Lb-zKB" secondAttribute="leading" id="hhX-vc-ZFg"/>
+                            <constraint firstItem="PUF-hF-ufV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ibX-IZ-fLa"/>
+                            <constraint firstItem="oIx-h1-iBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="xc3-GQ-cBP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="PUF-hF-ufV" id="i16-hi-KJl"/>
+                        <outlet property="textFieldComment" destination="oca-Lb-zKB" id="8GJ-m4-p3Q"/>
+                        <outlet property="textFieldName" destination="oIx-h1-iBn" id="Rhm-bs-BsJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="368" y="279"/>
+            <point key="canvasLocation" x="368.11594202898556" y="278.57142857142856"/>
         </scene>
     </scenes>
 </document>
