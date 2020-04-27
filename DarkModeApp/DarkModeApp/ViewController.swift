@@ -12,7 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         let userInterfaceStyle = traitCollection.userInterfaceStyle
+               if userInterfaceStyle == .dark{ // dark mode
+                   buttonChange.tintColor = UIColor.white
+               } else {
+                   buttonChange.tintColor = UIColor.blue
+               }
     }
 
     @IBOutlet weak var buttonChange: UIButton!
