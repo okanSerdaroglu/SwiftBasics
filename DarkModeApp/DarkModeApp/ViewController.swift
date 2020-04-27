@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        overrideUserInterfaceStyle = .light // set your own mode for your app
+        // you can set your app mode in info.plist
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,6 +27,16 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var buttonChange: UIButton!
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        // work when mode changed in phone
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        if userInterfaceStyle == .dark{ // dark mode
+            buttonChange.tintColor = UIColor.white
+        } else {
+            buttonChange.tintColor = UIColor.blue
+        }
+    }
     
 }
 
