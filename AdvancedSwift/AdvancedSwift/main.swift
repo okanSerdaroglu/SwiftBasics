@@ -8,5 +8,19 @@
 
 import Foundation
 
-print("Hello, World!")
+let classJames = MusicianClass(nameInput: "James",
+                               ageInput: 50,
+                               instrumentInput: "Guitar")
+
+print(classJames.age)
+
+let structJames = MusicianStrcut(name: "James",
+                                 age: 50,
+                                 instrument: "Guitar")
+
+print(classJames.age)
+
+// you can use structs when you don't need inheritance and you don't need to do anything about objective C. Using structs is recommended without these cases
+
+
 
