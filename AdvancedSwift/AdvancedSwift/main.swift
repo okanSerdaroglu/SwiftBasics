@@ -18,17 +18,17 @@ let structJames = MusicianStrcut(name: "James",
                                  age: 50,
                                  instrument: "Guitar")
 
-print(classJames.age)
+//print(classJames.age)
 
 // you can use structs when you don't need inheritance and you don't need to do anything about objective C. Using structs is recommended without these cases
 
 
 
 classJames.age = 51
-print(classJames.age)
+//print(classJames.age)
 
 //structJames.age = 51 // you can not edit let defined struct property.Change it var
-print(structJames.age)
+//print(structJames.age)
 
 // REFERENCE vs VALUE
 
@@ -39,14 +39,22 @@ var copyOfStructJames = structJames
 copyOfClassJames.age = 52
 copyOfStructJames.age = 52
 
-print(copyOfClassJames.age)
+/*print(copyOfClassJames.age)
 print(copyOfStructJames.age)
 
 print(classJames.age)
-print(structJames.age)
+print(structJames.age)*/
 
 // Reference Types -> Class
 // Copy -> Same object new reference -> 1 object + 2 reference
 
 // Value Types -> Struct
 // Copy -> new object -> 2 objects
+
+// Function vs Mutating Function
+
+print(classJames.age)
+classJames.happyBirthday()
+
+print(structJames.age)
+print(structJames.age)
