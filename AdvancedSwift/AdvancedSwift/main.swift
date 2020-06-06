@@ -24,3 +24,29 @@ print(classJames.age)
 
 
 
+classJames.age = 51
+print(classJames.age)
+
+//structJames.age = 51 // you can not edit let defined struct property.Change it var
+print(structJames.age)
+
+// REFERENCE vs VALUE
+
+let copyOfClassJames = classJames
+
+var copyOfStructJames = structJames
+
+copyOfClassJames.age = 52
+copyOfStructJames.age = 52
+
+print(copyOfClassJames.age)
+print(copyOfStructJames.age)
+
+print(classJames.age)
+print(structJames.age)
+
+// Reference Types -> Class
+// Copy -> Same object new reference -> 1 object + 2 reference
+
+// Value Types -> Struct
+// Copy -> new object -> 2 objects
