@@ -16,6 +16,7 @@
 		3D900239248D849A001DCA6B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900238248D849A001DCA6B /* SecondView.swift */; };
 		3D90023B248D8729001DCA6B /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90023A248D8729001DCA6B /* ThirdView.swift */; };
 		3D90023D248D89CA001DCA6B /* FourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90023C248D89CA001DCA6B /* FourthView.swift */; };
+		3D90023F248D8BC7001DCA6B /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90023E248D8BC7001DCA6B /* FifthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3D900238248D849A001DCA6B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		3D90023A248D8729001DCA6B /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		3D90023C248D89CA001DCA6B /* FourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthView.swift; sourceTree = "<group>"; };
+		3D90023E248D8BC7001DCA6B /* FifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3D900238248D849A001DCA6B /* SecondView.swift */,
 				3D90023A248D8729001DCA6B /* ThirdView.swift */,
 				3D90023C248D89CA001DCA6B /* FourthView.swift */,
+				3D90023E248D8BC7001DCA6B /* FifthView.swift */,
 			);
 			path = FirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3D900227248D8025001DCA6B /* SceneDelegate.swift in Sources */,
 				3D900239248D849A001DCA6B /* SecondView.swift in Sources */,
 				3D90023D248D89CA001DCA6B /* FourthView.swift in Sources */,
+				3D90023F248D8BC7001DCA6B /* FifthView.swift in Sources */,
 				3D900229248D8025001DCA6B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
