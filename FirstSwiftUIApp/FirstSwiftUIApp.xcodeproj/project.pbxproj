@@ -14,6 +14,7 @@
 		3D90022E248D8026001DCA6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D90022D248D8026001DCA6B /* Preview Assets.xcassets */; };
 		3D900231248D8026001DCA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D90022F248D8026001DCA6B /* LaunchScreen.storyboard */; };
 		3D900239248D849A001DCA6B /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D900238248D849A001DCA6B /* SecondView.swift */; };
+		3D90023B248D8729001DCA6B /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90023A248D8729001DCA6B /* ThirdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3D900230248D8026001DCA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D900232248D8026001DCA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D900238248D849A001DCA6B /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		3D90023A248D8729001DCA6B /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3D900232248D8026001DCA6B /* Info.plist */,
 				3D90022C248D8026001DCA6B /* Preview Content */,
 				3D900238248D849A001DCA6B /* SecondView.swift */,
+				3D90023A248D8729001DCA6B /* ThirdView.swift */,
 			);
 			path = FirstSwiftUIApp;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D900225248D8025001DCA6B /* AppDelegate.swift in Sources */,
+				3D90023B248D8729001DCA6B /* ThirdView.swift in Sources */,
 				3D900227248D8025001DCA6B /* SceneDelegate.swift in Sources */,
 				3D900239248D849A001DCA6B /* SecondView.swift in Sources */,
 				3D900229248D8025001DCA6B /* ContentView.swift in Sources */,
