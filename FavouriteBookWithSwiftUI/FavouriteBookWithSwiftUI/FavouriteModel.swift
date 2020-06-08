@@ -21,6 +21,8 @@ struct FavouriteElemenst  : Identifiable {
     var description : String
 }
 
+// bands
+
 let metallica = FavouriteElemenst(
     name:"Metallica",
     imageName:"metallica",
@@ -41,3 +43,28 @@ let ironMaiden = FavouriteElemenst(
 
 let favouriteBands = FavouriteModel(title:"Favorite Bands"
     ,elements: [metallica,megaDeth,ironMaiden])
+
+// movies
+
+let pulpFiction = FavouriteElemenst(
+    name:"Pulp Fiction",
+    imageName:"pulpfiction",
+    description:"Movie 1"
+)
+
+let theDarkNight = FavouriteElemenst(
+    name:"The Dark Night",
+    imageName:"thedarknight",
+    description:"Movie 2"
+)
+
+let killBill = FavouriteElemenst(
+    name:"Kill Bill",
+    imageName:"killbill",
+    description:"Movie 3"
+)
+
+let favouriteFilms = FavouriteModel(title:"Favorite Films"
+    ,elements: [pulpFiction,theDarkNight,killBill])
+
+let myFavorites = [favouriteBands,favouriteFilms]
