@@ -13,6 +13,7 @@
 		3D85F365248EC6E9001B078B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F364248EC6E9001B078B /* Assets.xcassets */; };
 		3D85F368248EC6E9001B078B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F367248EC6E9001B078B /* Preview Assets.xcassets */; };
 		3D85F36B248EC6E9001B078B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F369248EC6E9001B078B /* LaunchScreen.storyboard */; };
+		3D85F373248EC769001B078B /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F372248EC769001B078B /* FavouriteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D85F367248EC6E9001B078B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D85F36A248EC6E9001B078B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D85F36C248EC6E9001B078B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D85F372248EC769001B078B /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				3D85F35E248EC6E7001B078B /* AppDelegate.swift */,
 				3D85F360248EC6E7001B078B /* SceneDelegate.swift */,
+				3D85F372248EC769001B078B /* FavouriteModel.swift */,
 				3D85F362248EC6E7001B078B /* ContentView.swift */,
 				3D85F364248EC6E9001B078B /* Assets.xcassets */,
 				3D85F369248EC6E9001B078B /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D85F35F248EC6E7001B078B /* AppDelegate.swift in Sources */,
+				3D85F373248EC769001B078B /* FavouriteModel.swift in Sources */,
 				3D85F361248EC6E7001B078B /* SceneDelegate.swift in Sources */,
 				3D85F363248EC6E7001B078B /* ContentView.swift in Sources */,
 			);
