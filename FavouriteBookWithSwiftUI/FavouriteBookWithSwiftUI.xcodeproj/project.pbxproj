@@ -14,6 +14,7 @@
 		3D85F368248EC6E9001B078B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F367248EC6E9001B078B /* Preview Assets.xcassets */; };
 		3D85F36B248EC6E9001B078B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D85F369248EC6E9001B078B /* LaunchScreen.storyboard */; };
 		3D85F373248EC769001B078B /* FavouriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F372248EC769001B078B /* FavouriteModel.swift */; };
+		3D85F375248ED025001B078B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85F374248ED025001B078B /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3D85F36A248EC6E9001B078B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D85F36C248EC6E9001B078B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D85F372248EC769001B078B /* FavouriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteModel.swift; sourceTree = "<group>"; };
+		3D85F374248ED025001B078B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3D85F369248EC6E9001B078B /* LaunchScreen.storyboard */,
 				3D85F36C248EC6E9001B078B /* Info.plist */,
 				3D85F366248EC6E9001B078B /* Preview Content */,
+				3D85F374248ED025001B078B /* DetailView.swift */,
 			);
 			path = FavouriteBookWithSwiftUI;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				3D85F35F248EC6E7001B078B /* AppDelegate.swift in Sources */,
 				3D85F373248EC769001B078B /* FavouriteModel.swift in Sources */,
 				3D85F361248EC6E7001B078B /* SceneDelegate.swift in Sources */,
+				3D85F375248ED025001B078B /* DetailView.swift in Sources */,
 				3D85F363248EC6E7001B078B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
